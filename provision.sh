@@ -86,6 +86,10 @@ then
   # initial cron
   crontab /vagrant/root_cronjob_monitoring_sysstat_plus_custom_pgmon.txt
 
+  # nice setup shortcut as per https://github.com/philmcc/postgres_clusters
+  ln -s /var/lib/pgsql/13/data /database
+  cd /database
+
 
   # Add ShellCheck https://github.com/koalaman/shellcheck - a great tool for testing and improving the quality of shell scripts
   yum -y install epel-release
