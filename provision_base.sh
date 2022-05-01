@@ -25,6 +25,9 @@ then
   yum -y update
   yum -y install postgresql13-server postgresql13
   yum -y install postgresql13-contrib postgresql13-libs postgresql13-devel
+
+  cp /vagrant/bashrc.append.txt /tmp/bashrc.append.txt
+  su -c "cat /tmp/bashrc.append.txt >> ~/.bash_profile" -s /bin/sh postgres
  
   # Extra packages and devtool for install of https://github.com/ossc-db/pg_plan_advsr  
   #yum -y install postgresql-devel
