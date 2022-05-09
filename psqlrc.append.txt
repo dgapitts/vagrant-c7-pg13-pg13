@@ -1,3 +1,5 @@
+-- based off https://github.com/datachomp/dotfiles/blob/master/.psqlrc#
+
 \set QUIET 1
 -- formatting
 \x auto
