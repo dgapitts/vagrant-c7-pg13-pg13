@@ -69,7 +69,9 @@ then
 
   # setup environment variables and extra alias for postgres and bench1 user
   cp /vagrant/bashrc.append.txt /tmp/bashrc.append.txt
+  cp /vagrant/psqlrc.append.txt /tmp/psqlrc.append.txt
   su -c "cat /tmp/bashrc.append.txt >> ~/.bashrc" -s /bin/sh postgres
+  su -c "cat /tmp/bashrc.append.txt >> ~/.psqlrc" -s /bin/sh postgres
   su -c "cat /tmp/bashrc.append.txt >> ~/.bash_profile" -s /bin/sh postgres
   su -c "cat /tmp/bashrc.append.txt >> ~/.bashrc" -s /bin/sh bench1
 
