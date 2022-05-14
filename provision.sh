@@ -71,7 +71,7 @@ then
   cp /vagrant/bashrc.append.txt /tmp/bashrc.append.txt
   cp /vagrant/psqlrc.append.txt /tmp/psqlrc.append.txt
   su -c "cat /tmp/bashrc.append.txt >> ~/.bashrc" -s /bin/sh postgres
-  su -c "cat /tmp/bashrc.append.txt >> ~/.psqlrc" -s /bin/sh postgres
+  su -c "cat /tmp/psqlrc.append.txt >> ~/.psqlrc" -s /bin/sh postgres
   su -c "cat /tmp/bashrc.append.txt >> ~/.bash_profile" -s /bin/sh postgres
   su -c "cat /tmp/bashrc.append.txt >> ~/.bashrc" -s /bin/sh bench1
 

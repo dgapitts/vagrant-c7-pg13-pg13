@@ -36,7 +36,7 @@
 \set COMP_KEYWORD_CASE upper
 
 -- greeting
-\echo '\nWelcome, my magistrate\n'
+-- \echo '\nWelcome, my magistrate\n'
 
 \set clear '\\! clear;'
 
